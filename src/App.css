@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #007aff;
+  background-color: #0CD6E8;
   padding: 25px;
   flex: 1;
 }
@@ -32,7 +32,7 @@ ul {
 }
 
 a {
-  color: #007aff;
+  color: #e8470c;
 }
 
 .card_section {
@@ -46,7 +46,7 @@ a {
 
 .card_section_header {
   display: flex;
-  line-height: 75%;
+  /* line-height: 75%; */
   flex-direction: row;
   justify-content: space-between;
 }
