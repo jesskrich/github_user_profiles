@@ -38,7 +38,7 @@ const Card = ({ item }) => {
         		</div>
          		{renderActivity(icons)}
       		</div>
-      		<div style={{textAlign: 'left'}}>
+      		<div style={{textAlign: 'left', maxWidth: '50%'}}>
         		<p style={{marginTop: 0}}>{description || "No description available."}</p>
 	  		</div>
     	</div>

@@ -41,7 +41,7 @@ a {
   border-bottom: white solid 1px;
   padding-left: 2em;
   padding-right: 2em;
-  height: 100px;
+  min-height: 150px;
 
 }
 
@@ -68,4 +68,30 @@ a {
     margin-left: 20px;
     align-self: center;
     font-size: .75em;
+}
+
+@media only screen and (max-width : 600px) {
+    h2 {
+        font-size: .85em;
+    }
+    p {
+        font-size: .85em;
+    }
+    .card_section {
+        min-height: 100px;
+    }
+    /* #calcBody {
+      width: 390px;
+      height: 390px;
+      border: solid 3px #66a6ae;
+      padding: 8px;
+    }
+    #calcDisplay {
+        height: 60px;
+    }
+    button {
+        width: 75px;
+        height: 75px;
+        margin-top: 7.5px;
+    } */
 }
