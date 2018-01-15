@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 const renderActivity = (collection) => {
-	const activities = collection.map((item, index) =>
-		<div className="activity" key={index}>
-			<i className={item.className} aria-hidden="true"></i>
-			<p style={{marginLeft: '.3em'}}>{item.activityCount}</p>
-		</div>
-	)
-	return (
-		<div className="activity_container">{activities}</div>
+  const activities = collection.map((item, index) =>
+    <div className="activity" key={index}>
+      <i className={item.className} aria-hidden="true"></i>
+      <p style={{marginLeft: '.3em'}}>{item.activityCount}</p>
+    </div>
+  )
+  return (
+    <div className="activity_container">{activities}</div>
   )
 }
 
