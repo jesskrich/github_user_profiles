@@ -13,13 +13,7 @@ const renderActivity = (collection) => {
 }
 
 const Card = ({ item }) => {
-	const { name,
-					description,
-					html_url,
-					stargazers_count,
-					forks_count,
-					open_issues_count,
-					size } = item;
+	const { name } = item;
 
   const icons = [
 		{className: "fa fa-star", activityCount: stargazers_count },
