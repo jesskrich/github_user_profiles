@@ -22,7 +22,7 @@ const Card = ({ item }) => {
 		open_issues_count,
 		size } = item;
 
-  const icons = [
+	const icons = [
 		{className: "fa fa-star", activityCount: stargazers_count },
 		{className: "fa fa-code-fork", activityCount: forks_count },
 		{className: "fa fa-exclamation-circle", activityCount: open_issues_count }
