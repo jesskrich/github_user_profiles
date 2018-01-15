@@ -22,30 +22,30 @@ const Card = ({ item }) => {
     open_issues_count,
     size } = item;
 
-	const icons = [
-		{className: "fa fa-star", activityCount: stargazers_count },
-		{className: "fa fa-code-fork", activityCount: forks_count },
-		{className: "fa fa-exclamation-circle", activityCount: open_issues_count }
-	];
+  const icons = [
+    {className: "fa fa-star", activityCount: stargazers_count },
+    {className: "fa fa-code-fork", activityCount: forks_count },
+    {className: "fa fa-exclamation-circle", activityCount: open_issues_count }
+  ];
 
   return (
-		<div className="card_section">
-			<div className="card_section_header">
-				<div style={{display: 'flex', flexDirection: 'row'}}>
-					<a href={html_url}>
-						<h2>{name}</h2>
-					</a>
-					<p className="sup_text">{size} KB</p>
-				</div>
-				{renderActivity(icons)}
-			</div>
-			<div style={{textAlign: 'left', maxWidth: '50%'}}>
-				<p style={{marginTop: 0}}>
-					{description || "No description available."}
-				</p>
-			</div>
-		</div>
-	)
+    <div className="card_section">
+      <div className="card_section_header">
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+          <a href={html_url}>
+            <h2>{name}</h2>
+          </a>
+          <p className="sup_text">{size} KB</p>
+        </div>
+        {renderActivity(icons)}
+      </div>
+      <div style={{textAlign: 'left', maxWidth: '50%'}}>
+        <p style={{marginTop: 0}}>
+          {description || "No description available."}
+        </p>
+      </div>
+    </div>
+  )
 
 }
 
