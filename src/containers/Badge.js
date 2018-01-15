@@ -8,10 +8,10 @@ class Badge extends Component {
     super(props)
     this.state = {
       username: this.props.username,
-    	showRepos: this.props.showRepos,
+      showRepos: this.props.showRepos,
       userData: [],
       error: false }
-    }
+  }
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.sendData) {
