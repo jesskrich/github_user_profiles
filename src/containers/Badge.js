@@ -72,6 +72,7 @@ class Badge extends Component {
       </div>
     )
   }
+  
 }
 
 export default Badge;
