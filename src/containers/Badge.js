@@ -42,11 +42,11 @@ class Badge extends Component {
   }
 
   renderRepos() {
-  	if (this.state.showRepos)
-    	return <RepoList
-              username={this.state.username}
-              resetForm={this.props.resetForm}
-              publicRepos={this.state.userData.public_repos}
+    if (this.state.showRepos)
+      return <RepoList
+                username={this.state.username}
+                resetForm={this.props.resetForm}
+                publicRepos={this.state.userData.public_repos}
             />
   }
 
