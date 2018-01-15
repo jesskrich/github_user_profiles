@@ -8,7 +8,7 @@ const renderActivity = (collection) => {
 		</div>
 	)
 	return (
-  	<div className="activity_container">{activities}</div>
+		<div className="activity_container">{activities}</div>
   )
 }
 
