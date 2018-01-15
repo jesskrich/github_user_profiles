@@ -26,7 +26,7 @@ const Card = ({ item }) => {
 		{className: "fa fa-star", activityCount: stargazers_count },
 		{className: "fa fa-code-fork", activityCount: forks_count },
 		{className: "fa fa-exclamation-circle", activityCount: open_issues_count }
-  ];
+	];
 
   return (
 		<div className="card_section">
