@@ -1,5 +1,0 @@
-Add error handling to fetch request
-Add loading to fetch request
-import icons
-overflow-hidden
-media queries?
