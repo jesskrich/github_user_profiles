@@ -8,7 +8,7 @@ class Search extends Component {
     super(props)
     this.state = {
       username: '',
-    	clicked: false,
+      clicked: false,
       sendData: false,
       showRepos: false
     }
