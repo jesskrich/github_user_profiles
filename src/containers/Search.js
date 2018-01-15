@@ -4,6 +4,7 @@ import '../App.css';
 import GithubLogo from '../img/github_icon.png';
 
 class Search extends Component {
+
   constructor(props) {
     super(props)
     this.state = {
@@ -21,7 +22,7 @@ class Search extends Component {
   resetForm() {
     this.setState({
       username: '',
-    	sendData: false,
+      sendData: false,
       showRepos: false})
   }
 
@@ -34,16 +35,17 @@ class Search extends Component {
   handleSubmit(event) {
     this.setState({
       clicked: true,
-    	sendData: true,
+      sendData: true,
       showRepos: false })
     event.preventDefault();
   }
 
   renderUserInfo() {
     return <Badge
-      username={this.state.username}
-      resetForm={this.resetForm}
-      sendData={this.state.sendData}/>
+              username={this.state.username}
+              resetForm={this.resetForm}
+              sendData={this.state.sendData}
+            />
   }
 
   render() {
