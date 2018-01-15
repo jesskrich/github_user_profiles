@@ -51,9 +51,10 @@ class Badge extends Component {
   }
 
   render() {
-  	if (this.state.error)
-  		return <p>Please enter a valid user.</p>
-    if (!this.state.userData) return <p>Loading</p>
+    if (this.state.error)
+      return <p>Please enter a valid user.</p>
+    if (!this.state.userData)
+      return <p>Loading</p>
     return (
      	<div style={{marginTop: 20}}>
         <img src={this.state.userData.avatar_url}
