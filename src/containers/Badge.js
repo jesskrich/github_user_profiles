@@ -9,8 +9,7 @@ class Badge extends Component {
       this.state = {
         username: this.props.username,
         showRepos: this.props.showRepos,
-        userData: [],
-        error: false
+        userData: []
       }
   }
 
@@ -19,8 +18,7 @@ class Badge extends Component {
       this.setState({
         userData: [],
         showRepos: false,
-        username: this.props.username,
-        error: false
+        username: this.props.username
       })
       this.getUserData()
     }
@@ -32,7 +30,7 @@ class Badge extends Component {
         userData: data,
         error: false
       }))
-      .catch(this.setState({
+      .catch(err => this.setState({
         error: true
       }))
     this.props.resetForm()
@@ -52,10 +50,10 @@ class Badge extends Component {
   }
 
   render() {
+    if (!this.state.userData)
+      return <p>Loading...</p>
     if (this.state.error)
       return <p>Please enter a valid user.</p>
-    if (!this.state.userData)
-      return <p>Loading</p>
     return (
      	<div style={{marginTop: 20}}>
         <img src={this.state.userData.avatar_url}
@@ -72,7 +70,7 @@ class Badge extends Component {
       </div>
     )
   }
-  
+
 }
 
 export default Badge;
