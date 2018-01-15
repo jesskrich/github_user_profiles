@@ -6,11 +6,12 @@ class Badge extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      username: this.props.username,
-      showRepos: this.props.showRepos,
-      userData: [],
-      error: false }
+      this.state = {
+        username: this.props.username,
+        showRepos: this.props.showRepos,
+        userData: [],
+        error: false
+      }
   }
 
   componentWillReceiveProps(nextProps) {

@@ -7,13 +7,12 @@ class Search extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      username: '',
-      clicked: false,
-      sendData: false,
-      showRepos: false
-    }
-
+      this.state = {
+        username: '',
+        clicked: false,
+        sendData: false,
+        showRepos: false
+      }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.resetForm = this.resetForm.bind(this);

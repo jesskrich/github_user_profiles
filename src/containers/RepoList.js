@@ -6,10 +6,11 @@ class RepoList extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      username: this.props.username,
-      repoData: []}
-   }
+      this.state = {
+        username: this.props.username,
+        repoData: []
+      }
+  }
 
   componentWillMount() {
     let repos = (this.props.username + '/repos');
