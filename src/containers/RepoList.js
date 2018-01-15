@@ -21,13 +21,13 @@ class RepoList extends Component {
    }
 
   render() {
-  	if (this.props.publicRepos === 0)
-    	return <p>No public repos available.</p>
-  	let items = this.state.repoData
-  	return (
-    	<ul>
+    if (this.props.publicRepos === 0)
+      return <p>No public repos available.</p>
+    let items = this.state.repoData
+    return (
+      <ul>
         {items.map(item =>
-      		<li key={item.id}>
+          <li key={item.id}>
             <Card item={item} />
           </li>)}
       </ul>
