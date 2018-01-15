@@ -15,11 +15,11 @@ const renderActivity = (collection) => {
 const Card = ({ item }) => {
 	const { name,
 					description,
-          html_url,
-          stargazers_count,
-          forks_count,
-          open_issues_count,
-          size } = item;
+					html_url,
+					stargazers_count,
+					forks_count,
+					open_issues_count,
+					size } = item;
 
   const icons = [
 		{className: "fa fa-star", activityCount: stargazers_count },
@@ -28,7 +28,7 @@ const Card = ({ item }) => {
   ];
 
   return (
-		<div className="card_section" >
+		<div className="card_section">
 			<div className="card_section_header">
 				<div style={{display: 'flex', flexDirection: 'row'}}>
 					<a href={html_url}>
