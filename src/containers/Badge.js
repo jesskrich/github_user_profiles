@@ -36,7 +36,7 @@ class Badge extends Component {
     this.props.resetForm()
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getUserData()
   }
 
