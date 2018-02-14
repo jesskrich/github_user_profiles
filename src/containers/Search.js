@@ -67,7 +67,7 @@ class Search extends Component {
       </div>
     )
   }
-  
+
 }
 
 export default Search;

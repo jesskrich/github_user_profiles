@@ -12,7 +12,7 @@ class RepoList extends Component {
       }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     let repos = (this.props.username + '/repos');
     getGithub(repos)
       .then(data => this.setState({
